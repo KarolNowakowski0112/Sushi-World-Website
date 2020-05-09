@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Sushi World - JS</title>
+	<meta name="author" content="Karol Nowakowski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+    	<header>
+                <nav class="navbar fixed-top navbar-dark bg-bank navbar-expand-lg">               
+                    <a class="navbar-brand ml-2 mr-5" href="#"><img src="photos/logo5.png" width="40" height="30" class="d-inline-block mr-1 " alt="">          </a>               
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                
+                    <div class="collapse navbar-collapse" id="mainmenu">                    
+                        <ul class="navbar-nav mr-auto">                       
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> Home </a>
+                            </li>     
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Kategorie </a>                                
+                                <div class="dropdown-menu" aria-labelledby="submenu">                                
+                                    <a class="dropdown-item" href="#nigiri-przepisy"> Nigiri </a>
+                                    <a class="dropdown-item" href="#maki-przepisy"> Maki </a>                                                                                                
+                                </div>                              
+                            </li>                           
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#addRecipe"> Dodaj przepis </a>
+                            </li>                                                                               
+                        </ul>                                     
+                    </div>               
+                </nav>            
+        </header>	
+        <main>		
+		<section class="bank">		
+			<div class="container" mt-1>				
+				<header id="start">	
+                    <div><p><br><br><br></p></div>				
+					<h1 id="start-head">Susi World</h1>
+                    <p id="start-p"><br>Naucz się robić sushi sam! <br> Setki przepisów z całego świata. <br> Przepisy udoskonalane przez dziesiątki lat. <br>
+                        Szczegółowe opisy przygotowania. <br> Możliwość dodawania własnych przepisów. <br><br><br></p>
+                </header>               							
+			</div>					
+        </section>
+        <section class="bank" id="nigiri-przepisy">		
+                <div class="container">				
+                    <header>				
+                        <div><p><br></p></div>	
+                        <h2>Nigiri</h2>
+                        <p class="hidden">Kliknij na zdjęcie, by wyświetlić przepis.</p>
+                    </header>         			
+                </div>					
+        </section>
+<!-- Slideshow container nigiri-->
+<div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides1">
+          <div class="numbertext">1 / 3</div>
+          <a href="#show-recipe1"><button class="btn" onclick="showRecipe1(0)"><img class="photo" src="photos/nigiri-krew.png"></button></a>
+          <div class="text">Nigiri z krewetkami</div>
+        </div>
+      
+        <div class="mySlides1">
+          <div class="numbertext">2 / 3</div>
+          <a href="#show-recipe2"><button class="btn" onclick="showRecipe1(1)"><img class="photo" src="photos/nigiri-losos.png"></button></a>
+          <div class="text">Nigiri z łososiem</div>
+        </div>
+      
+        <div class="mySlides1">
+          <div class="numbertext">3 / 3</div>
+          <a href="#show-recipe3"><button class="btn" onclick="showRecipe1(2)"><img class="photo" src="photos/nigiri-wegorz.png"></button></a>
+          <div class="text">Nigiri z węgorzem</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div class="hidden2"><br><br><br><br><br><br><br><br><br><br></div>
+
+      <div class="myRecipes1" id="show-recipe1">
+            <div><p><br><br></p></div>
+          <p class="recipe"><em>Nigiri z krewetkami - składniki:</em> <br> - 250g ryżu do sushi <br> - 3 łyżki octu ryżowego <br> - 1 łyżka cukru <br> - 1 łyżka soli <br> - 200g krewetek koktajlowych
+            <br> - 1/4 listka nori <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br>   <br> 
+            <em>Sposób przygotowania:</em>
+            <br> Mieszamy ocet, cukier i 1 płaską łyżkę soli. Ryż przekładamy do płaskiej, dużej miski, rozprowadzamy na nim mieszaninę octu i ostrożnie mieszamy płaską łopatką, 
+            chłodząc ryż przez cały czas wentylatorem lub suszarką (zimnym powietrzem). <br> Krewetki myjemy i osuszamy. Nori kroimy w małe paski.
+            Małe porcje ryżu formujemy w owalne kształty, zwilżając przy tym ręce od czasu do czasu niewielką ilością wody z octem, ponieważ ryż jest klejący. 
+            Na środku umieszczamy bardzo małą ilość wasabi i układamy krewetki, dekorujemy paskami nori. Sushi podajemy z sosem sojowym, wasabi i imbirem.
+        </p>
+      </div>
+
+      <div class="myRecipes1" id="show-recipe2">
+            <div><p><br><br></p></div>
+            <p class="recipe"><em>Nigiri z łososiem - składniki:</em> <br> - 300g ryżu do sushi <br> - kilka cienkich pasków nori <br> - 250g wędzonego łososia
+                <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br>   <br> 
+                <em>Sposób przygotowania:</em> <br>
+                Z ciepłego ryżu formujemy kostki. Jeżeli robimy to ręcznie to staramy się, aby były one maksymalnie do siebie podobne. 
+                Będzie to ładnie się komponowało a jak wiemy, jedzenie orientalne musi ładnie wyglądać. Jeżeli ryż się bardzo lepi nam do rąk, należy zwilżyć je przegotowaną 
+                wodą z dodatkiem osty ryżowego. Każdą kostkę smarujemy pastą wasabi, układamy na wierzchu rybę i opasamy wstążeczką nori. Nori pełni rolę dekoracyjną, ale 
+                i utrzymuje ryż z rybą w niezmiennej pozycji. Podajemy z sosej sojowym, wasabi i imbirem.
+            </p>
+      </div>
+
+      <div class="myRecipes1" id="show-recipe3">
+            <div><p><br><br></p></div>
+            <p class="recipe"><em>Nigiri z węgorzem - składniki:</em> <br> - 300g ryżu do sushi <br> - kilka cienkich pasków nori <br> - 200g węgorza
+                <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br> - biały sezam <br>  <br> 
+                <em>Sposób przygotowania:</em> <br>
+                Z ciepłego ryżu formujemy kostki. Jeżeli robimy to ręcznie to staramy się, aby były one maksymalnie do siebie podobne. 
+                Będzie to ładnie się komponowało a jak wiemy, jedzenie orientalne musi ładnie wyglądać. Jeżeli ryż się bardzo lepi nam do rąk, należy zwilżyć je przegotowaną 
+                wodą z dodatkiem osty ryżowego. Każdą kostkę smarujemy pastą wasabi, układamy na wierzchu rybę i opasamy wstążeczką nori. Nori pełni rolę dekoracyjną, ale 
+                i utrzymuje ryż z rybą w niezmiennej pozycji. Na koniec posypujemy sezamem. Podajemy z sosej sojowym, wasabi i imbirem.</p>
+      </div><div><br><br><br></div>
+
+      <section class="bank" id="maki-przepisy">		
+            <div class="container">				
+                <header>				
+                    <div><p><br></p></div>	
+                    <h2>Maki</h2>
+                    <p class="hidden">Kliknij na zdjęcie, by wyświetlić przepis.</p>
+                </header>         			
+            </div>					
+    </section>
+<!-- Slideshow container maki-->
+      <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides2">
+              <div class="numbertext">1 / 3</div>
+              <a href="#show-recipe4"><button class="btn" onclick="showRecipe2(0)"><img class="photo" src="photos/hosomaki.PNG"></button></a>
+              <div class="text">Hosomaki</div>
+            </div>
+          
+            <div class="mySlides2">
+              <div class="numbertext">2 / 3</div>
+              <a href="#show-recipe5"><button class="btn" onclick="showRecipe2(1)"><img class="photo" src="photos/futomaki.PNG"></button></a>
+              <div class="text">Futomaki</div>
+            </div>
+          
+            <div class="mySlides2">
+              <div class="numbertext">3 / 3</div>
+              <a href="#show-recipe6"><button class="btn" onclick="showRecipe2(2)"><img class="photo" src="photos/uramaki.png"></button></a>
+              <div class="text">Uramaki</div>
+            </div>
+
+            <div class="mySlides2">
+                <div class="numbertext">3 / 3</div>
+                <a href="#show-recipe7"><button class="btn" onclick="showRecipe2(3)"><img class="photo" src="photos/temaki.png"></button></a>
+                <div class="text">Temaki</div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+          </div>
+          <br>
+    
+          <div class="hidden2"><br><br><br><br><br><br><br><br><br><br></div>
+
+          <div class="myRecipes2" id="show-recipe4">
+                <div><p><br><br></p></div>
+              <p class="recipe"><em>Hosomaki - składniki:</em> <br> - 250g ryżu do sushi <br> - 3 łyzki octu ryżowego <br> - 3 arkusze nori <br> - 1 łyżka cukru <br> - 6 paluszków krabowych 
+                <br> - 1/2 awokado <br> - 1/2 czerwonej papryki  <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br>   <br> 
+                <em>Sposób przygotowania:</em> <br> Na bambusowej macie ułóż nori - gładką stroną do dołu. Na ¾ arkusza nałóż cienką, równomierną warstwę ryżu. Mniej więcej w połowie 
+                warstwy ryżu posmaruj go niewielką ilością wasabi, a następnie wypełnij składnikami pokrojonymi w słupki. Zwiń przy pomocy maty, na 
+                koniec sklejając rolkę lekko zwilżonym wodą marginesem nori (fragment bez ryżu). Pokrój na 6 kawałków. Podawaj z sosem sojowym i imbirem. </p>
+          </div>
+    
+          <div class="myRecipes2" id="show-recipe5">
+                <div><p><br><br></p></div>
+                <p class="recipe"><em>Futomaki - składniki:</em> <br> - 300g ryżu do sushi <br> - kilka cienkich pasków nori <br> - 250g wędzonego łososia
+                    <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br>   <br> 
+                    <em>Sposób przygotowania:</em> <br>
+                    Z ciepłego ryżu formujemy kostki. Jeżeli robimy to ręcznie to staramy się, aby były one maksymalnie do siebie podobne. 
+                    Będzie to ładnie się komponowało a jak wiemy, jedzenie orientalne musi ładnie wyglądać. Jeżeli ryż się bardzo lepi nam do rąk, należy zwilżyć je przegotowaną 
+                    wodą z dodatkiem osty ryżowego. Każdą kostkę smarujemy pastą wasabi, układamy na wierzchu rybę i opasamy wstążeczką nori. Nori pełni rolę dekoracyjną, ale 
+                    i utrzymuje ryż z rybą w niezmiennej pozycji. Podajemy z sosej sojowym, wasabi i imbirem.
+                </p>
+          </div>
+    
+          <div class="myRecipes2" id="show-recipe6">
+                <div><p><br><br></p></div>
+                <p class="recipe"><em>Uramaki - składniki:</em> <br> - 250g ryżu do sushi <br> - 2 łyżki octu ryżowego <br> - 1 łyżka cukru <br> - garść krewetek <br>
+                    - 3 łyżki tempury <br> - łyżka sezamu <br> - 1/2 awokado <br> - 3 arkusze nori <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br>   <br> 
+                   <em>Sposób przygotowania:</em> <br> Tempurę przygotuj zgodnie z instrukcją na opakowaniu i smaż oczyszczone krewetki bez pancerza. 
+                   Nori umieść na macie, ⅔ powierzchni pokryj ryżem i tak przygotowany arkusz odwróć ryżem do dołu. Nori na wysokości ⅔ posmaruj delikatnie 
+                   wasabi i ułóż wzdłuż usmażone krewetki i awokado. Zwiń rolkę. Obtocz ryż na zewnątrz rolki w lekko podprażonym sezamie. Pokrój na 6 kawałków.
+                   Podawaj z sosem sojowym i imbirem. </p>
+          </div>
+
+          <div class="myRecipes2" id="show-recipe7">
+                <div><p><br><br></p></div>
+                <p class="recipe"><em>Temaki - składniki:</em> <br> - 250g ryżu do sushi <br> - 3 łyzki octu ryżowego <br> - 3 arkusze nori <br> - 200g tuńczyka
+                    <br> - 1 ogórek <br> - 1/2 awokado <br> - sos sojowy <br> - wasabi <br> - imbir marynowany <br>   <br> 
+                    <em>Sposób przygotowania:</em> <br> Składniki, którymi wypełnisz środek rożka powinny być pokrojone w długie patyczki, jeśli to możliwe, 
+                    gdyż pozwoli to równomiernie rozprowadzić te składniki. Na połowę arkusza nori nałóż ryż. Najbardziej optymalną grubością ryżu jest około 1 centymetr. 
+                    Wypełnienie najlepiej umieścić w jednej linii, na przekątnej kwadratu wcześniej ułożonego ryżu. Następnie uformuj rożek, rozpoczynając od prawego dolnego rogu 
+                    przesuwając w kierunku prawego górnego rogu. Brzegi Nori na sam koniec posmaruj niewielką ilością wasabi co spowoduje, że rożek będzie trwalszy.
+                    Podawaj z sosem sojowym i imbirem.</p>
+          </div><div><br><br><br></div>
+ 
+          <div id="addRecipe">
+              <h2 class="recipe_txt">Dodaj własny przepis  <small id="smtxt"><em>(* - pola wymagane)</em></small></h2>
+              <button type="button" class="button add-btn" id="add-after">Dodaj przepis</button>
+          </div>
+
+        <section>
+            <div class="container">
+                    <footer class="pt-4 my-md-5 pt-md-5 mt-5 border-top" id="stopka">
+                        <p>SUSHI WORLD <br> © 2019 Copyright: Karol Nowakowski</p>
+                    </footer>			
+            </div>					
+        </section>
+        </main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="sushiJS.js"></script>
+</body>
+</html>

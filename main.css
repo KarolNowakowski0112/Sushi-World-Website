@@ -1,0 +1,339 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body
+{
+	background-image: url("photos/back.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+h1
+{
+	font-size: 42px;
+	font-weight: 400;
+	color: 3a5f65;
+	margin: 20px;
+}
+
+h2
+{
+	font-size: 48px;
+	font-weight: 400;
+	color: 3a5f65;
+	margin: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+small {
+	font-size: 16px;
+	color: rgb(174, 174, 174);
+	display: none;
+}
+
+.add-btn {
+	background-color: #4CAF50;
+	margin-bottom: 60px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;  
+}
+
+.recipe_txt {
+	font-size: 32px;
+	font-weight: 400;
+	color: 3a5f65;
+	margin: 20px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	margin-left: 90px;
+	text-align: left;
+}
+
+.bank
+{
+    margin-top: 75px;
+	text-align: center;
+}
+
+.bank img
+{
+	width: 100%;
+	height: auto;
+}
+
+.bank p
+{
+	margin-bottom: 30px;
+}
+
+.navbar
+{
+	min-height: 57px;
+}
+
+.bg-bank
+{
+	background-color: rgb(44, 181, 137) !important;
+}
+
+.nav-item:hover
+{
+    background-color: #539fa0 !important;
+}
+
+.dropdown-menu
+{
+    background-color: rgb(44, 181, 137) !important;
+}
+
+.dropdown-item
+{
+    color: white !important;
+    background-color: rgb(44, 181, 137) !important;
+}
+
+.dropdown-item:hover
+{
+    background-color: #539fa0 !important;
+}
+
+li {
+    color: black;
+}
+
+#start {
+	background-image: url("photos/home.png");
+}
+
+#start-head {
+	font-size: 70px;
+}
+
+#start-p {
+	margin-top: 20px;
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+
+.recipe {
+	margin-left: 350px;
+	margin-right: 300px;
+}
+
+.recipe_added {
+	margin-left: 270px;
+	margin-right: 180px;
+}
+
+
+#stopka {
+	text-align: center;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.photo {
+	width: 100%;
+}
+
+.btn {
+	width: 800px;
+	height: auto;
+}
+
+.add-btn {
+	margin-left: 150px;
+	margin-bottom: 30px;
+}
+
+.hidden2 {
+	display: none;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: black;
+}
+
+/* Caption text */
+.text {
+  color: #276c85;
+  font-size: 34px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ee0808;
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.inputs {
+	margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+	.recipe {
+		margin-left: 200px;
+	}
+
+	.recipe_added {
+		margin-left: 150px;
+		margin-right: 180px;
+	}
+
+	.inputs {
+		margin-left: 10px;
+	}
+
+	.btn2 {
+		margin-left: 30px !important;
+	}
+}
+
+@media (max-width: 992px) {
+	#start-p {
+		font-size: 28px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	.recipe {
+		margin-left: 130px;
+		margin-right: 100px;
+	}
+
+	.recipe_added {
+		margin-left: 130px;
+		margin-right: 100px;
+	}
+
+	.inputs {
+		margin-left: 70px !important;
+	}
+	
+	.btn2 {
+		margin-left: 400px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	#start-p {
+		font-size: 25px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	.recipe {
+		margin-left: 60px;
+		margin-right: 50px;
+	}
+
+	.recipe_added {
+		margin-left: 60px;
+		margin-right: 50px;
+	}
+
+	#my_text_rec {
+		width: 410px !important;
+	}
+
+	.inputs {
+		margin-left: 70px !important;
+	}
+
+	.slideshow-container {
+		margin-left: 10px !important;
+		width: 455px;
+		position: absolute;
+		align-content: center;
+		margin: auto;
+	  }
+
+	.btn {
+		width: 350px;
+		height: auto;
+		align-content: center;
+	}
+	
+	.btn2 {
+		margin-left: 120px !important;
+	}
+
+	.photo {
+		width: 430px;
+		height: auto;
+		float: left;
+	}
+
+	.text {
+		display: none;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.hidden2 {
+		display: inline;
+	}
+}
